@@ -1,0 +1,37 @@
+@import "tailwindcss";
+body {
+  margin: 0;
+  padding: 0;
+}
+.color{
+    text-decoration: none;
+}
+.nav-link {
+  color: white;             
+  text-decoration: none;   
+  transition: color 0.3s;  
+}
+
+.nav-link:hover {
+  color: #63b3ed;
+    
+}      
+.nav-linkk{
+  text-decoration: none;
+  color: black;
+}
+.nav-linkk:hover{
+  color: #63b3ed;
+}
+.title{width: 260px; background:rgb(61, 12, 12); display: flex; justify-content: space-between;}
+.title span{padding: 10px; border-left: 3px solid red; border-right: 3px solid red; border-radius: 0 40px 0 0;}
+.a{background: white;}
+.hp{
+  text-decoration: none;
+}
+.box{text-decoration: none;}
+ul{list-style: none;width: 50%;}
+        li{border-bottom: 2px solid #f1e4e4; padding-bottom: 14px; position: relative;}
+        li::before{content: ''; position: absolute; left: -20px; width: 2px; height: 100%; background: #000;}
+        li::after{ content: ''; position: absolute;top: 0;left: -25px;width: 10px; height: 10px; border-radius: 50%; border: 1px solid #000; background: #fff;}
+        li:first-child::after{background: #000;}
