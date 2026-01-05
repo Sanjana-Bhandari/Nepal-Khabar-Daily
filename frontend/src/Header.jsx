@@ -31,7 +31,7 @@ function Header() {
           <a href="#विचार" className="nav-link pt-2">विचार</a>
           <a href="#खेलकुद" className="nav-link pt-2">खेलकुद</a>
           <a href="#अन्य" className="nav-link pt-2">अन्य</a>
-         <a href="https://www.hamropatro.com" className="hp ml-26 bg-red-600 text-white px-2 py-2 rounded hover:bg-red-400 transition-colors flex items-center gap-1 cursor-pointer">
+         <a href="https://www.hamropatro.com" target="_blank" className="hp ml-26 bg-red-600 text-white px-2 py-2 rounded hover:bg-red-400 transition-colors flex items-center gap-1 cursor-pointer">
           <div><i className="bi bi-calendar2"></i> हाम्रो पात्रो</div>
         </a>
           <a href="#सेयर मार्केट" className="nav-link pt-1"><button className="flex items-center gap-1 px-2 py-1 rounded-md bg-blue-600 text-white text-sm font-medium hover:bg-transparent hover:text-blue-600 transition-all duration-200"><i class="bi bi-bar-chart-line-fill"></i> सेयर मार्केट</button></a>
@@ -248,13 +248,8 @@ function Header() {
              <div className="col-lg-3 pt-4">
               <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/250px-x250px-30112025120704.gif" alt="" />
              </div>
-             <div className="cart col-lg-3">
-             <a href="https://www.youtube.com/watch?v=XfV-g_Dyte8" className="block relative rounded  hover:scale-105 transition-transform">
-              <img src="http://localhost:5176/src/nepaldailykhabar.png" alt="YouTube Video"className="w-full"/>
-             <div className="absolute inset-0 flex items-center justify-center">
-             <div className="bg-red-500 rounded-full p-4"><i className="bi bi-play-fill text-red-600 text-3xl"></i></div>
-             </div>
-            </a>
+             <div className="cart col-lg-3 pt-4">
+              <iframe width="400" height="230" src="https://www.youtube.com/embed/XfV-g_Dyte8?si=fJ20SL8CLnEU7E1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
       </section>
@@ -311,11 +306,16 @@ function Header() {
       <h6 className="absolute bottom-6 left-4 right-4 text-white text-lg font-bold leading-snug">फाइल। मुख्य भन्सार कार्यालयका प्रमुखहरूमा हेरफेर- को, कहाँ पुगे?</h6>
     </div>
     <div className="relative group">
-      <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" className="w-full  object-cover"/>
+      <img src="https://images.unsplash.com/photo-1548013146-72479768bada" alt="" className="w-full object-cover"/>
       <div className="absolute inset-0 bg-black/40"></div>
       <h5 className="absolute bottom-6 left-4 right-4 text-white text-lg font-bold leading-snug">पशुपतिमा पूरै एक दिन नियाल्दा (फोटो फिचर)</h5>
     </div>
      </div>
+   </section>
+   <section>
+    <div className="containetr-fluid">
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/_c8y38joox4?si=8ZcPT_mvkFRpxiQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
    </section>
   <footer className="bg-black from-[#1c1c1c] to-black text-gray-300 mt-10">
   <div className="container mx-auto px-6 py-6 flex flex-col lg:flex-row justify-between items-center border-b border-gray-700">
