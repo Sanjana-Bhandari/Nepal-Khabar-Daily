@@ -2,32 +2,35 @@ import React from "react";
 
 const newsData = [
   {
-    title: "चुनावी प्रचारमा कडाइ : राष्ट्रिय झन्डा १० वटाभन्दा बढी प्रयोग गर्न नपाइने",
-    desc: "निर्वाचन आयोगले जारी गरेको आचारसंहिताअनुसार...",
-    img: "https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2025/miscellaneous/flag-29122025081139-240x158.jpg"
+    title: "कुहिरो र हुस्सुले ढाकिएको दमक, जनजीवन कष्टकर (तस्वीरहरू)",
+    desc: "",
+    img: "https://www.onlinekhabar.com/wp-content/uploads/2026/01/damal-hussu-1230.jpg",
   },
   {
-    title: "रोकेको छैन सेलिब्रिटीहरूको नाममा ‘स्क्याम’, सम्बन्धित निकाय मौन",
-    desc: "रीमा विश्वकर्मा, अनमोल केसी, दयाहाङ राई लगायतका कलाकारको नाम/तस्बिर दुरुपयोग...",
-    img: "https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2025/third-party/rima-daya-anmol-29122025053657-240x158.jpg"
+    title: "वीरगन्जमा कर्फ्यु दिउँसो १ बजेसम्मका लागि थप",
+    desc: "",
+    img: "https://nepalkhabar.prixacdn.net/media/albums/birganj-1_2aNZQ561AO.jpg"
+  },
+  {
+    title: "तीन डिग्री सेल्सियसमा झर्‍यो काठमाडौँको न्यूनतम तापक्रम",
+    desc: "",
+    img: "https://nepalkhabar.prixacdn.net/media/albums/Ktm-chiso_WPy8veOOME.png.870x522_q100_crop.jpg"
   }
 ];
-
 const MainNews = () => {
   return (
     <section className="container mx-auto py-6">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {newsData.map((news, index) => (
-          <div key={index} className="flex flex-col border-b border-gray-200 pb-4">
-            <h3 className="font-semibold text-lg">{news.title}</h3>
-            <p className="mt-2">{news.desc}</p>
-            <img src={news.img} alt={news.title} className="w-full max-w-md mt-2 hover:scale-105 transition-transform duration-300"/>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{newsData.map((news, index) => (
+          <div key={index} className="flex flex-col border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300" >
+            <img src={news.img} alt={news.title} className="w-full h-48 md:h-52 lg:h-56 object-cover transition-transform duration-300 hover:scale-105"/>
+            <h5 className="font-bold text-lg mt-2 px-3"> {news.title} </h5>
+            {news.desc && (
+              <p className="text-gray-600 text-sm mt-1 px-3 mb-3"> {news.desc}</p>
+            )}
           </div>
         ))}
       </div>
     </section>
   );
 };
-
-
 export default MainNews;

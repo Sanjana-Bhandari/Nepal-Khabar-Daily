@@ -22,8 +22,7 @@ function TopNewsBar() {
               key={index}
               href="#"
               className="box border border-gray-300 rounded-full px-4 py-1.5 text-sm text-gray-700 hover:bg-gray-100 hover:border-gray-400 transition"
-            >
-              {item}
+            >{item}
             </a>
           ))}
         </div>
@@ -31,5 +30,4 @@ function TopNewsBar() {
     </section>
   );
 }
-
 export default TopNewsBar;

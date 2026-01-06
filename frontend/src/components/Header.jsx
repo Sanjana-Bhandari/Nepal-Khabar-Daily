@@ -3,6 +3,7 @@ import nepaldailykhabar from "../assets/nepaldailykhabar.png";
 import banner from "../assets/bannerimg.png";
 import Navbar from "./Navbar";
 import TopNewsBar from "./TopNewsBar";
+import NepaliDateDisplay from "./NepaliDate";
 
 const Header = () => {
   return (
@@ -11,7 +12,7 @@ const Header = () => {
         <div className="col-lg-3 flex items-center gap-2 lg:gap-3">
           <img src={nepaldailykhabar} alt="Nepal Daily Khabar" className="w-50 lg:w-32 hover:scale-105 transition-transform duration-300"/>
           <div className="flex flex-col text-sm">
-            <span className="text-gray-500">२३ पुष २०८२, आइतबार</span>
+            <NepaliDateDisplay />
             <div className="flex gap-1">
               <span className="text-red-600 font-bold">Nepal</span>
               <span className="text-black font-bold">Khabar</span>
@@ -19,16 +20,19 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="col-lg-9 flex lg:justify-end mt-2 lg:mt-0">
-          <img className="w-100 max-w-md hover:scale-105 transition-transform duration-300"src={banner}alt="Online Khabar Banner"/>
-        </div>
+         <div className="col-lg-9 relative mt-2 lg:mt-0">
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center bg-black/30 rounded-lg">
+      <h2 className="text-black text-lg md:text-xl font-semibold tracking-wide"> जनतासँगै, जनताका लागि</h2>
+      <p className="text-red-200 text-sm md:text-base italic mt-1">नेपालको साझा खबर</p>
+      <div className="w-16 h-0.5 bg-white mt-2 rounded-full"></div>
+     </div>
+     </div>
       </div>
       <Navbar />
-
     <TopNewsBar/>
       <div className="container-fluid row py-4">
           <div className="col-lg-8">
-            <img src="https://npcdn.ratopati.com/media/promo/1100x100_SXPYZRf5qw.gif" alt=""/>
+           <img src="https://npcdn.ratopati.com/media/promo/1100x100_SXPYZRf5qw.gif" alt=""/>
            <div className="flex py-5 space-x-6">
            <div className="flex-1 relative pr-4">
             <div className=" border-b border-gray-200 pb-4 pt-2">
@@ -45,7 +49,6 @@ const Header = () => {
            <button className="flex items-center gap-1 hover:text-blue-600" onClick={() => alert("संग्रह गरियो")}
            >
            <span> <i class="bi bi-bookmarks"></i> संग्रह</span></button>
-
            <button className="flex items-center gap-1 hover:text-blue-600" onClick={() => {
               if (navigator.share) {
                navigator.share({
@@ -58,7 +61,7 @@ const Header = () => {
             }
           }}
           >
-          <span><i class="bi bi-share"></i> सेयर</span></button>
+          <span><i class="bi bi-share"></i>सेयर</span></button>
         </div>
            <div className="absolute top-0 right-0 h-full w-0.5 bg-gray-400"></div>
            </div>
@@ -279,70 +282,34 @@ const Header = () => {
   <h2 className="text-2xl font-bold text-red-600 mb-4 border-b-2 border-red-600 inline-block">मुख्य समाचार</h2>
   
   <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-    {/* Main news */}
     <div className="relative">
-      <img
-        src="https://i0.wp.com/www.imagekhabar.com/wp-content/uploads/2025/09/Pakrau-Image-channel.jpg?fit=720%2C378&ssl=1"
-        alt="मुख्य समाचार"
-        className="w-full h-80 object-cover rounded-md hover:scale-105 transition-transform duration-300"
-      />
+      <img src="https://nepalkhabar.prixacdn.net/media/albums/president-3_ivnme8jvZX.jpg.570x332_q100_crop.jpg" alt="मुख्य समाचार" className="w-full h-80 object-cover rounded-md hover:scale-105 transition-transform duration-300"/>
     </div>
     <div className="flex flex-col justify-between">
-      <h3 className="text-xl lg:text-2xl font-bold mb-2">
-        अरनिको पाँडेलले पनि लिए बन्दसूचीबाट नाम फिर्ता
-      </h3>
-      <p className="text-gray-700 mb-4">
-        काठमाडौं । राष्ट्रिय स्वतन्त्र पार्टी(रास्वपा)ले निर्वाचन आयोगमा बुझाएको समानुपातिक उम्मेदवारको
-        बन्दसूचीबाट डा. अरनिको पाँडेलले नाम फिर्ता लिएको घोषणा गरेका छन् । सोमबार सामाजिक सञ्जाल
-        फेसबुकमार्फत पाँडेलले नाम फिर्ता लिएको जानकारी दिएका छन्...
-      </p>
-      <a href="#"
-        className="text-blue-600 font-semibold hover:underline flex items-center gap-1">
-        थप समाचार <i className="bi bi-arrow-right"></i>
-      </a>
+      <h3 className="text-xl lg:text-2xl font-bold mb-2"> देउवा, ओली र प्रचण्डलाई फेरि सुरक्षा थप्ने तयारी, अब पछुवा गाडी पनि दिने </h3>
+      <p className="text-gray-700 mb-4"> सरकारले पूर्वप्रधानमन्त्रीहरू शेरबहादुर देउवा, केपी शर्मा ओली र पुष्पकमल दाहाल प्रचण्डको सुरक्षा बढाउने भएको छ। पुस ८ गते राष्ट्रपति रामचन्द्र पौडेलले प्रधानमन्त्री सुशीला कार्की र शीर्ष तीन नेताबीच पहिलो पटक छलफल गराएका थिए।... </p>
+      <a href="#" className="text-blue-600 font-semibold hover:underline flex items-center gap-1"> थप समाचार <i className="bi bi-arrow-right"></i></a>
     </div>
   </div>
-
-  {/* Smaller news cards below */}
   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-6">
     <div className="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <img
-        src="https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2025/miscellaneous/flag-29122025081139-240x158.jpg"
-        alt="news1"
-        className="w-full h-40 object-cover"
-      />
+      <img src="https://nepalkhabar.prixacdn.net/media/albums/Myadi-police-2_Gv9m9ec30N.jpg.570x332_q100_crop.jpg" alt="news1" className="w-full h-40 object-cover"/>
       <div className="p-3">
-        <h4 className="font-semibold text-md mb-2">
-          भीमफेदी सुमो दुर्घटना: मृत्यु हुने ६ मध्ये ४ जनाको पहिचान खुल्यो
-        </h4>
+        <h5 className="font-semibold text-md mb-2">  निर्वाचन प्रहरी भर्नाको मापदण्ड स्वीकृत, दुवै प्रहरीले एकसाथ १ लाख ४९ हजार ९० जना भर्ना गर्ने</h5>
         <p className="text-sm text-gray-600">मंसिर २९, २०८२</p>
       </div>
     </div>
-
     <div className="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <img
-        src="https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2025/third-party/rima-daya-anmol-29122025053657-240x158.jpg"
-        alt="news2"
-        className="w-full h-40 object-cover"
-      />
+      <img src="https://nepalkhabar.prixacdn.net/media/albums/purna-bahadur-ramesh_pDuRIO7bVa.jpg.570x332_q100_crop.jpg" alt="news2" className="w-full h-40 object-cover" />
       <div className="p-3">
-        <h4 className="font-semibold text-md mb-2">
-          रोकिएको छैन सेलिब्रिटीहरूको नाममा ‘स्क्याम’, सम्बन्धित निकाय मौन
-        </h4>
+        <h5 className="font-semibold text-md mb-2"> महाराजगन्ज-गुण्डु-हात्तीवन : राष्ट्रियसभा सिट मिलाउने दौडधुपमा खड्का-लेखक</h5>
         <p className="text-sm text-gray-600">मंसिर २९, २०८२</p>
       </div>
     </div>
-
     <div className="bg-white shadow-md rounded-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
-      <img
-        src="https://i0.wp.com/www.imagekhabar.com/wp-content/uploads/2025/12/ramesh-lekhak-1.jpg?fit=720%2C405&ssl=1"
-        alt="news3"
-        className="w-full h-40 object-cover"
-      />
+      <img src="https://nepalkhabar.prixacdn.net/media/albums/kp-oli_FrJ9hUAMQ7.jpg.370x245_q70_crop.jpg" alt="news3" className="w-full h-40 object-cover" />
       <div className="p-3">
-        <h4 className="font-semibold text-md mb-2">
-          तत्कालिन गृहमन्त्री लेखकले जाँचबुझ आयोगमा दिए बयान (पूर्णपाठ-सहित)
-        </h4>
+        <h5 className="font-semibold text-md mb-2"> यस्ता छन् ओलीले जाँचबुझ आयोगलाई दिएको लिखित बयानका मुख्य ६ बुँदा</h5>
         <p className="text-sm text-gray-600">मंसिर २९, २०८२</p>
       </div>
     </div>

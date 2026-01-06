@@ -1,16 +1,21 @@
 import React from "react";
 import Header from "./components/Header";
-import TopNewsBar from "./components/TopNewsBar";
 import MainNews from "./components/MainNews";
 import Footer from "./components/Footer";
+import NewsGrid from "./components/NewsGrid";
+import LifeStyleSection from "./components/LifeStyleSection";
+import TodayPhotos from "./components/TodayPhotos";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <TopNewsBar />
+      <Header/>
       <MainNews />
+      <NewsGrid />
+      <LifeStyleSection />
+      <TodayPhotos />
       <Footer />
+      
     </div>
   );
 }
