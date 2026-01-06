@@ -2,10 +2,11 @@ import React from "react";
 import nepaldailykhabar from "../assets/nepaldailykhabar.png";
 import banner from "../assets/bannerimg.png";
 import Navbar from "./Navbar";
+import TopNewsBar from "./TopNewsBar";
 
 const Header = () => {
   return (
-    <header className="p-0 m-0">
+    <header className="container-fluid p-0 m-0">
       <div className="container mx-auto flex flex-col lg:flex-row items-center justify-between gap-2 lg:gap-4 py-2">
         <div className="col-lg-3 flex items-center gap-2 lg:gap-3">
           <img src={nepaldailykhabar} alt="Nepal Daily Khabar" className="w-50 lg:w-32 hover:scale-105 transition-transform duration-300"/>
@@ -23,6 +24,8 @@ const Header = () => {
         </div>
       </div>
       <Navbar />
+
+    <TopNewsBar/>
       <div className="container-fluid row py-4">
           <div className="col-lg-8">
             <img src="https://npcdn.ratopati.com/media/promo/1100x100_SXPYZRf5qw.gif" alt=""/>
@@ -207,7 +210,7 @@ const Header = () => {
               <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/250px-x250px-30112025120704.gif" alt="" />
              </div>
              <div className="cart col-lg-3 pt-4">
-              <iframe width="400" height="230" src="https://www.youtube.com/embed/XfV-g_Dyte8?si=fJ20SL8CLnEU7E1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              <iframe width="300" height="230" src="https://www.youtube.com/embed/XfV-g_Dyte8?si=fJ20SL8CLnEU7E1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
         <div className="container mx-auto py-6">
