@@ -19,8 +19,8 @@ const Footer = () => {
   </div>
   <div className="container row mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
     <div className="col-lg-3" >
-      <div className="flex items-center gap-2 mb-4 ">
-        <span className=" text-white px-2 py-1 font-bold"><img src="http://localhost:5173/src/nepaldailykhabar.png" alt="" className="w-24 rounded-full object-cover lg:w-32 hover:scale-105 transition-transform duration-300"/></span>
+      <div className="flex items-center gap-2 mb-2">
+        <span className=" text-white py-1 font-bold"><img src="http://localhost:5173/src/assets/nepaldailykhabar.png" alt="" className="w-20 rounded-full object-cover lg:w-15 hover:scale-105 transition-transform duration-300"/></span>
         <span className="text-white text-xl font-bold">nepalkhabardaily.com</span>
       </div>
       <h5 className="text-white font-semibold mb-2 w-50 lg:w-32 hover:scale-105 transition-transform duration-300">CONTACT</h5>

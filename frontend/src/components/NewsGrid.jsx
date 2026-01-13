@@ -36,7 +36,7 @@ const newsData = [
 ];
 function NewsGrid() {
   return (
-    <section className="max-w-7xl mx-auto px-4 py-6">
+    <section className="container py-6">
       <div className="flex items-center mb-4">
         <span className="bg-blue-800 text-white px-4 py-1 font-extrabold"> खबर</span>
         <div className="flex-1 h-px bg-gray-300 ml-2"></div>
@@ -52,7 +52,7 @@ function NewsGrid() {
         ))}
       </div>
       <div className="container pt-5">
-        <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/recurring-offer-970x120-31102025074059.gif" className="ml-25" alt="" />
+        <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/recurring-offer-970x120-31102025074059.gif" className="w-full" alt="" />
       </div>
     </section>
   );

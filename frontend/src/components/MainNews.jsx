@@ -19,7 +19,11 @@ const newsData = [
 ];
 const MainNews = () => {
   return (
-    <section className="container mx-auto py-6">
+    <section className="container py-3">
+       <div className="flex items-center mb-4">
+        <span className="bg-red-800 text-white px-4 py-1 font-extrabold">मौसम</span>
+        <div className="flex-1 h-px bg-gray-300 ml-2"></div>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">{newsData.map((news, index) => (
           <div key={index} className="flex flex-col border rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300" >
             <img src={news.img} alt={news.title} className="w-full h-48 md:h-52 lg:h-56 object-cover transition-transform duration-300 hover:scale-105"/>

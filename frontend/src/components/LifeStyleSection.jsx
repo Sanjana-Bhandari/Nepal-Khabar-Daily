@@ -16,9 +16,10 @@ export default function LifeStyleSection() {
     },
   ];
   return (
-    <div className="max-w-7xl mx-auto px-4 py-6">
+    <div className="container py-6">
       <div className="flex items-center mb-4">
-        <span className="bg-blue-700 text-white px-4 py-1 font-bold">जीवनशैली</span>
+        <span className="bg-green-800 text-white px-4 py-1 font-extrabold"> जीवनशैली</span>
+        <div className="flex-1 h-px bg-gray-300 ml-2"></div>
       </div>
       <div className="mb-8 relative w-full h-70 rounded-lg overflow-hidden">
         <iframe className="absolute top-0 left-0 w-full h-full" src="https://www.youtube.com/embed/PgfNaP4HSXg" title="Main Video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>

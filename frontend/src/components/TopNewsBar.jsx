@@ -13,12 +13,13 @@ function TopNewsBar() {
     { name: "उम्मेदवार सिफारिस", path: "/ummidwar-sifarish" },
     { name: "कुलमान घिसिङ", path: "/kulman-ghising" },
     { name: "निर्वाचन आयोग", path: "/election-commission" },
-    { name: "रवि लामिछाने", path: "/rabi-lamichhane" },
+    // { name: "रवि लामिछाने", path: "/rabi-lamichhane" },
   ];
 
   return (
     <section className="border-b border-gray-200">
-      <div className="overflow-x-auto mx-5">
+      <div className="container">
+      <div className="overflow-x-auto">
         <div className="flex gap-2.5 py-3 whitespace-nowrap">
           {items.map((item, index) => (
             <Link
@@ -30,6 +31,7 @@ function TopNewsBar() {
             </Link>
           ))}
         </div>
+      </div>
       </div>
     </section>
   );

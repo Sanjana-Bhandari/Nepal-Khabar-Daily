@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
      <nav className="bg-blue-800">
         <div className="container mx-auto flex flex-wrap justify-center lg:justify-start gap-4 lg:gap-5 py-2 font-semibold">
-          <a href="#होमपेज" className="color pt-2">होमपेज</a>
+          <a href="/" className="color pt-2">होमपेज</a>
           <a href="#सामाचार" className="nav-link pt-2"> सामाचार</a>
           <a href="#बिजनेस" className="nav-link pt-2">बिजनेस</a>
           <a href="#जीवनशैली" className="nav-link pt-2"> जीवनशैली</a>

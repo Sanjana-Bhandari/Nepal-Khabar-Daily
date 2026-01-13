@@ -3,10 +3,11 @@ import React from 'react'
 function Hero() {
   return (
     <>
-    <div className="container-fluid row py-4">
+    <div className="container py-4">
+      <div className="row">
           <div className="col-lg-8">
            <img src="https://npcdn.ratopati.com/media/promo/1100x100_SXPYZRf5qw.gif" alt=""/>
-           <div className="flex py-5 space-x-6">
+           <div className="flex py-4">
            <div className="flex-1 relative pr-4">
             <div className=" border-b border-gray-200 pb-4 pt-2">
               <div className="row">
@@ -69,10 +70,10 @@ function Hero() {
            <div className="absolute top-0 right-0 h-full w-0.5 bg-gray-400"></div>
            </div>
            </div>
-            <div className="flex-1 border-b border-gray-300">
+            <div className="flex-1 border-b border-gray-300 ml-6">
             <h3 className="font-semibold text-lg mb-2">समानुपातिकमा कांग्रेसभित्रै भागबण्डा : संस्थापनलाई ६० र इतर पक्षलाई ४० प्रतिशत</h3>
             <img src="https://assets-cdn.ekantipur.com/uploads/source/news/kantipur/2025/politics/nepalicongresscentralcommitteemeetingsanepa05-21112025024049-600x0.jpg" alt="" className="mb-2 w-full object-cover max-w-md hover:scale-105 transition-transform duration-300"/>
-            <p> संस्थापन पक्षले ६० प्रतिशत राखेर इतरपक्षभित्र महामन्त्री गगन थापा र नेता शेखर कोइराला समूहलाई ४० प्रतिशत छुट्याइएको हो । संस्थापन पक्षभित्र पनि विभिन्न उपसमूह छन् ।</p>
+            <p className='pb-3'> संस्थापन पक्षले ६० प्रतिशत राखेर इतरपक्षभित्र महामन्त्री गगन थापा र नेता शेखर कोइराला समूहलाई ४० प्रतिशत छुट्याइएको हो । संस्थापन पक्षभित्र पनि विभिन्न उपसमूह छन् ।</p>
             <div className="row">
               <div className="col-lg-6">
             <img src="https://i0.wp.com/www.imagekhabar.com/wp-content/uploads/2025/12/congress-4.jpg?resize=300%2C165&ssl=1" alt="" className="mb-2 w-64 h-auto object-cover "/>
@@ -91,46 +92,50 @@ function Hero() {
            </div>
             <div className="relative mt-6">
             <div className="border-b border-gray-400 w-[75%]">
-              <h5 className="absolute -top-3 left-0  bg-white px-3 text-sm font-semibold">थप समाचार</h5><br/>
+            <div className="flex items-center mb-4">
+              <span className="bg-gray-200 text-black px-4 py-1 font-extrabold"> थप समाचार</span>
+              <div className="flex-1 h-px bg-gray-300 ml-2"></div>
+           </div>
               <a href="" className="nav-linkk">विवाईडी डल्फिनको विश्वव्यापी बिक्री १० लाख नाघ्यो</a>
               <div className="row pt-2">
-                <div className="col-lg-6 border-r-2 border-black"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
+                <div className="col-lg-6 border-r-2 border-black mb-2"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
                 <div className="col-lg-6"><p>मंसिर २९, २०८२</p></div>
-              </div><br/>
+              </div>
             </div>
-            <div className="border-b border-gray-400 w-[75%]">
-              <h5 className="absolute -top-3 left-0  bg-white px-3 text-sm font-semibold">थप समाचार</h5><br/>
+            <div className="border-b border-gray-400 w-[75%] pt-3">
               <a href="" className="nav-linkk">टियागो ईभीमा मेडिकल प्रोफेशनलहरूका लागि विशेष अफर</a>
               <div className="row pt-2">
-                <div className="col-lg-6 border-r-2 border-black"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
+                <div className="col-lg-6 border-r-2 border-black mb-2"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
                 <div className="col-lg-6"><p>मंसिर २९, २०८२</p></div>
-              </div><br/>
+              </div>
             </div>
-            <div className="border-b border-gray-400 w-[75%]">
-              <h5 className="absolute -top-3 left-0  bg-white px-3 text-sm font-semibold">थप समाचार</h5><br/>
+            <div className="border-b border-gray-400 w-[75%] pt-3">
+             
               <a href="" className="nav-linkk">पोखरामा केई र फोर्थिङ शोरुम</a>
               <div className="row pt-2">
-                <div className="col-lg-6 border-r-2 border-black"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
+                <div className="col-lg-6 border-r-2 border-black mb-2"><a href="" className="nav-linkk">कान्तिपुर संवाददाता</a></div>
                 <div className="col-lg-6"><p>मंसिर २९, २०८२</p></div>
-              </div><br/>
+              </div>
+            </div>
+            <div>
+          <div className='pt-2'>
+           <span className="text-blue-600 font-semibold text-sm">विश्व</span>
+           <h6 className="text-3xl md:text-4xl font-semibold mt-2">विद्युतीय गाडी बिक्रीमा बीवाइडीले टेस्लालाई उछिन्यो</h6>
+           <small className="text-gray-600 mt-4 leading-relaxed"> विश्वमा सर्वाधिक विद्युतीय गाडी बिक्रीका रूपमा चिनियाँ कम्पनी ‘बीवाइडी’ ले अमेरिकी कम्पनी ‘टेस्ला’लाई उछिनेको छ।</small>
+           <p className="text-sm text-red-500 pt-3">नेपालको संवाददाता | पुष २०, २०८१</p>
+        </div>
             </div>
             </div>
            </div>
-           <div className="col-lg-3">
-            <div className=" bg-white  shadow-md overflow-hidden">
-              <img src="https://i0.wp.com/www.imagekhabar.com/wp-content/uploads/2025/09/Pakrau-Image-channel.jpg?fit=720%2C378&ssl=1" alt="News"className="w-full object-cover"/>
-              <h5 className="h-42 pt-3 mx-2">एक महिलाको २७ लाख ठगी गरेकाे आराेपमा २ जना पक्राउ</h5>
-            </div>
-           </div>
-           <div className="col-lg-4">
-            <div className=" bg-white shadow-md overflow-hidden " >
-              <img src="https://i0.wp.com/www.imagekhabar.com/wp-content/uploads/2025/12/ramesh-lekhak-1.jpg?fit=720%2C405&ssl=1" alt="News"className="w-full object-cover"/>
-             <h5 className="h-28 pt-3 mx-2">तत्कालिन गृहमन्त्री लेखकले जाँचबुझ आयोगमा दिए बयान (पूर्णपाठ-सहित)</h5>
-            </div>
+           <div className='col-lg-7'>
+            <h3>काठमाडौँमा छैन बन्दको प्रभाव (तस्बिरहरू)</h3>
+           <img className='h-80' src="https://npcdn.ratopati.com/media/news/banda-pravab-(1)_v9HXswlN33.jpg" alt="थारु संस्कृतिमा रङ भर्दै सोमिना" loading="lazy"></img>
+           <img className='h-65 w-100 pt-2' src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="" />
            </div>
          </div>
           </div>
           <div className="col-lg-4">
+            <div className=''>
             <div className="border border-gray-200 rounded-md p-4 bg-white mb-4">
               <h2 className="text-center font-semibold text-lg mb-3"> प्रतिनिधिसभा निर्वाचन २०८२</h2>
               <div className="bg-black text-white text-center py-4 rounded-md">
@@ -174,20 +179,11 @@ function Hero() {
           <img src="https://www.onlinekhabar.com/wp-content/uploads/2025/12/satyanarayan-safi.png" alt="" />
          </div>
           </div>
-        </div>
-         <div className="row"> 
-          <div className="col-lg-3 pt-4">
-            <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/250-x-250-new-1662025055302.gif" alt="" />
           </div>
-           <div className="col-lg-3 pt-4">
-            <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/250x250-1-30112025114740.png" alt="" />
-           </div>
-             <div className="col-lg-3 pt-4">
-              <img src="https://assets-cdn.ekantipur.com/uploads/source/ads/250px-x250px-30112025120704.gif" alt="" />
-             </div>
-             <div className="cart col-lg-3 pt-4">
-              <iframe width="300" height="230" src="https://www.youtube.com/embed/XfV-g_Dyte8?si=fJ20SL8CLnEU7E1n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
+          </div>
+        </div>
+        <div className='container'>
+          <img src="https://www.onlinekhabar.com/wp-content/uploads/2026/01/euro-school-1.jpeg" className='w-full' alt="" />
         </div>
         <div className="container mx-auto py-6">
   <div className="border-b mb-4">
@@ -248,10 +244,8 @@ function Hero() {
     </div>
      </div>
    </div>
-    <div className="containetr-fluid">
-        <div>
-             <iframe width="100%" height="315"  src="https://www.youtube.com/embed/_c8y38joox4?si=8ZcPT_mvkFRpxiQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
-        </div>
+    <div className="container">  
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/_c8y38joox4?si=8ZcPT_mvkFRpxiQh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
     </div>
      <div className="container mx-auto py-6">
   <h2 className="text-2xl font-bold text-red-600 mb-4 border-b-2 border-red-600 inline-block">मुख्य समाचार</h2>
