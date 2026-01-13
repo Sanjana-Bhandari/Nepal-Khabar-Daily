@@ -9,6 +9,7 @@ import TodayPhotos from "./components/TodayPhotos";
 import Nirwachan from "./components/ElectionPage";
 import Rasapa from "./components/Rasapa";
 import Hero from "./components/Hero";
+import NewsLayout from "./components/Newslayout";
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
           element={
             <>
             <Hero/>
+            <NewsLayout/>
+            
               <MainNews />
               <NewsGrid />
               <LifeStyleSection />

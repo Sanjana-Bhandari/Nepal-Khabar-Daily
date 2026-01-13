@@ -29,9 +29,9 @@ export default function TodayPhotos() {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
   return (
-    <div className="max-w-6xl mx-auto px-4 py-8">
+    <div className="container py-2">
       <div className="mb-4 border-b border-gray-300 pb-2">
-        <h4 className="text-2xl font-extrabold text-green-700">आजका तस्वीरहरू</h4>
+        <h4 className="text-2xl font-extrabold nav-linngg">आजका तस्वीरहरू</h4>
       </div>
       <div className="relative w-full overflow-hidden rounded-lg">
         <img src={images[currentIndex].src}  alt={`Slide ${currentIndex + 1}`} className="w-full h-[420px] object-cover transition-all duration-500"/>
