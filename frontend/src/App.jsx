@@ -10,6 +10,15 @@ import Nirwachan from "./components/ElectionPage";
 import Rasapa from "./components/Rasapa";
 import Hero from "./components/Hero";
 import NewsLayout from "./components/Newslayout";
+import HealthPage from "./components/swasthya";
+import ShareMarket from "./components/ShareMarket";
+import NepaliCongress from "./components/NepaliCongress";
+import Nekpa from "./components/Nekpa";
+import Rajniti from "./components/Rajniti";
+import UmmedwarSifarish from "./components/UmmedwarSifarish";
+import KulmanGhising from "./components/KulmanGhising";
+import NirvachanAayog from "./components/NirvachanAayog";
+import RaswapaBalneSahamati from "./components/RaswapaBalneSahamati";
 
 function App() {
   return (
@@ -23,7 +32,6 @@ function App() {
             <>
             <Hero/>
             <NewsLayout/>
-            
               <MainNews />
               <NewsGrid />
               <LifeStyleSection />
@@ -31,17 +39,18 @@ function App() {
             </>
           }
         />
+         <Route path="/share-market" element={<ShareMarket />} />
+         <Route path="/swasthya" element={<HealthPage />} />
         <Route path="/nirwachan" element={<Nirwachan />} />
         <Route path="/raswapa" element={<Rasapa />} />
-        {/* <Route path="/balen-shah" element={<Placeholder title="बालने शाह" />} />
-        <Route path="/raswapa-balen" element={<Pla ceholder title="रास्वपा–बालने सहमति" />} />
-        <Route path="/nepali-congress" element={<Placeholder title="नेपाली कांग्रेस" />} />
-        <Route path="/ncp" element={<Placeholder title="नेकपा" />} />
-        <Route path="/politics" element={<Placeholder title="राजनीति" />} />
-        <Route path="/ummidwar-sifarish" element={<Placeholder title="उम्मेदवार सिफारिस" />} />
-        <Route path="/kulman-ghising" element={<Placeholder title="कुलमान घिसिङ" />} />
-        <Route path="/election-commission" element={<Placeholder title="निर्वाचन आयोग" />} />
-        <Route path="/rabi-lamichhane" element={<Placeholder title="रवि लामिछाने" />} /> */}
+        {/* <Route path="/balen-shah" element={<Placeholder title="बालने शाह" />} /> */}
+        <Route path="/raswapa-balen" element={<RaswapaBalneSahamati />} />
+        <Route path="/nepali-congress" element={<NepaliCongress />} />
+        <Route path="/ncp" element={<Nekpa/>} />
+        <Route path="/politics" element={<Rajniti/>} />
+        <Route path="/ummidwar-sifarish" element={<UmmedwarSifarish/>} />
+        <Route path="/kulman-ghising" element={<KulmanGhising/>} />
+        <Route path="/election-commission" element={<NirvachanAayog/>} />
       </Routes>
       <Footer />
       
